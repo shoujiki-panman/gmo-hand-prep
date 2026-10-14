@@ -1,0 +1,68 @@
+{
+    "env": {
+        "name": "gym_hil",
+        "task": "PandaPickCubeKeyboard-v0",
+        "fps": 10,
+        "robot": null,
+        "teleop": null,
+        "processor": {
+            "control_mode": "gamepad",
+            "observation": {
+                "add_joint_velocity_to_observation": true,
+                "add_ee_pose_to_observation": true,
+                "display_cameras": false
+            },
+            "image_preprocessing": {
+                "crop_params_dict": {
+                    "observation.images.front": [
+                        0,
+                        0,
+                        128,
+                        128
+                    ],
+                    "observation.images.wrist": [
+                        0,
+                        0,
+                        128,
+                        128
+                    ]
+                },
+                "resize_size": [
+                    128,
+                    128
+                ]
+            },
+            "gripper": {
+                "use_gripper": true,
+                "gripper_penalty": -0.02
+            },
+            "reset": {
+                "fixed_reset_joint_positions": [
+                    0.0,
+                    0.195,
+                    0.0,
+                    -2.43,
+                    0.0,
+                    2.62,
+                    0.785
+                ],
+                "reset_time_s": 2.0,
+                "control_time_s": 15.0,
+                "terminate_on_success": true
+            },
+            "reward_classifier": {
+                "pretrained_path": null
+            }
+        }
+    },
+    "dataset": {
+        "repo_id": "tanuma/il_gym",
+        "root": null,
+        "task": "PandaPickCubeKeyboard-v0",
+        "num_episodes_to_record": 30,
+        "replay_episode": 0,
+        "push_to_hub": false
+    },
+    "mode": "record",
+    "device": "mps"
+}

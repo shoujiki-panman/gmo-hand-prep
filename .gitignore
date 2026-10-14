@@ -1,0 +1,5 @@
+sim/unitree_ros/
+*.mp4
+__pycache__/
+.DS_Store
+outputs/
