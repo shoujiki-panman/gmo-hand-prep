@@ -1,0 +1,1068 @@
+{
+ "tw": [
+  {
+   "tool": "tw",
+   "variant": 1,
+   "target": {
+    "depth": 65,
+    "ang": 5
+   },
+   "cost": 11.873,
+   "passed": true,
+   "checks": {
+    "a_contacts": true,
+    "a_pad_side": true,
+    "b_direction": true,
+    "c_no_penetration": true,
+    "d_valley": true,
+    "d_enclosed": true
+   },
+   "hand_pose": {
+    "right_thumb_metacarpal_joint": 1.0505,
+    "right_thumb_proximal_joint": 0.6534,
+    "right_index_proximal_joint": 0.5193,
+    "right_middle_proximal_joint": 0.6285,
+    "right_ring_proximal_joint": 1.2574,
+    "right_pinky_proximal_joint": 0.8958
+   },
+   "frame": "right_base_link（+x 手のひら側・+y 親指側・+z 指の向き）, m",
+   "lines": {
+    "A": {
+     "rear": [
+      -0.01502,
+      0.04554,
+      0.05789
+     ],
+     "tip": [
+      0.09089,
+      0.02025,
+      0.10831
+     ]
+    },
+    "B": {
+     "rear": [
+      -0.01502,
+      0.04554,
+      0.05789
+     ],
+     "tip": [
+      0.08286,
+      0.00775,
+      0.11612
+     ]
+    }
+   },
+   "axis_palm": [
+    0.85124,
+    -0.26343,
+    0.45387
+   ],
+   "axis_world_at_ARM_HOLD": [
+    0.87576,
+    0.04104,
+    -0.48099
+   ],
+   "contacts": {
+    "thumb_pad→A": {
+     "dist_mm": 0.46,
+     "cos": 0.69,
+     "kind": "腹",
+     "finger_pt": [
+      0.05532,
+      0.02993,
+      0.0886
+     ],
+     "tool_pt": [
+      0.0551,
+      0.02978,
+      0.08898
+     ],
+     "n": [
+      -0.469,
+      -0.33415,
+      0.81755
+     ]
+    },
+    "index_pad→B": {
+     "dist_mm": 1.38,
+     "cos": 0.87,
+     "kind": "腹",
+     "finger_pt": [
+      0.0497,
+      0.02181,
+      0.10001
+     ],
+     "tool_pt": [
+      0.05013,
+      0.02116,
+      0.09887
+     ],
+     "n": [
+      0.30953,
+      -0.47119,
+      -0.82594
+     ]
+    },
+    "middle_side→B": {
+     "dist_mm": 1.67,
+     "cos": 0.94,
+     "kind": "側面",
+     "finger_pt": [
+      0.05826,
+      0.0131,
+      0.10248
+     ],
+     "tool_pt": [
+      0.05889,
+      0.01465,
+      0.10243
+     ],
+     "n": [
+      0.37693,
+      0.92565,
+      -0.03298
+     ]
+    }
+   },
+   "x": [
+    -0.01502,
+    0.04554,
+    0.05789,
+    0.91599,
+    -0.28347,
+    0.48839,
+    0.05175,
+    0.08419,
+    -0.05329,
+    0.37249,
+    1.05053,
+    0.6534,
+    0.51927,
+    0.62852,
+    1.25738,
+    0.89584
+   ],
+   "gap_deg": 131.68,
+   "depth_mm": 77.96,
+   "ang_index_deg": 10.63,
+   "protrude_mm": 32.9,
+   "min_dist_mm": 0.24,
+   "valley_thumb_mm": 15.45,
+   "valley_index_mm": 5.68,
+   "rear_out_mm": 25.16,
+   "thumb_index_mm": 15.09,
+   "opposition_deg": 131.53,
+   "arm_gap_at_thumb_mm": 10.95,
+   "half_open_rad": 0.07,
+   "tip_gap_open_mm": 16.8
+  },
+  {
+   "tool": "tw",
+   "variant": 2,
+   "target": {
+    "depth": 72,
+    "ang": 12
+   },
+   "cost": 0.392,
+   "passed": true,
+   "checks": {
+    "a_contacts": true,
+    "a_pad_side": true,
+    "b_direction": true,
+    "c_no_penetration": true,
+    "d_valley": true,
+    "d_enclosed": true
+   },
+   "hand_pose": {
+    "right_thumb_metacarpal_joint": 0.8101,
+    "right_thumb_proximal_joint": 0.7662,
+    "right_index_proximal_joint": 0.4319,
+    "right_middle_proximal_joint": 0.5365,
+    "right_ring_proximal_joint": 1.1605,
+    "right_pinky_proximal_joint": 1.2332
+   },
+   "frame": "right_base_link（+x 手のひら側・+y 親指側・+z 指の向き）, m",
+   "lines": {
+    "A": {
+     "rear": [
+      -0.01491,
+      0.04931,
+      0.054
+     ],
+     "tip": [
+      0.08149,
+      0.02364,
+      0.12069
+     ]
+    },
+    "B": {
+     "rear": [
+      -0.01491,
+      0.04931,
+      0.054
+     ],
+     "tip": [
+      0.07324,
+      0.00972,
+      0.12515
+     ]
+    }
+   },
+   "axis_palm": [
+    0.77085,
+    -0.27261,
+    0.57574
+   ],
+   "axis_world_at_ARM_HOLD": [
+    0.85908,
+    0.18632,
+    -0.47672
+   ],
+   "contacts": {
+    "thumb_pad→A": {
+     "dist_mm": 0.77,
+     "cos": 0.68,
+     "kind": "腹",
+     "finger_pt": [
+      0.0447,
+      0.03518,
+      0.09198
+     ],
+     "tool_pt": [
+      0.04424,
+      0.03485,
+      0.09251
+     ],
+     "n": [
+      -0.58849,
+      -0.428,
+      0.68593
+     ]
+    },
+    "index_pad→B": {
+     "dist_mm": 1.03,
+     "cos": 0.88,
+     "kind": "腹",
+     "finger_pt": [
+      0.04712,
+      0.02265,
+      0.10748
+     ],
+     "tool_pt": [
+      0.0475,
+      0.0221,
+      0.1067
+     ],
+     "n": [
+      0.37111,
+      -0.5362,
+      -0.75813
+     ]
+    },
+    "middle_side→B": {
+     "dist_mm": 1.1,
+     "cos": 0.95,
+     "kind": "側面",
+     "finger_pt": [
+      0.05653,
+      0.01364,
+      0.11218
+     ],
+     "tool_pt": [
+      0.0569,
+      0.01467,
+      0.1123
+     ],
+     "n": [
+      0.33116,
+      0.93701,
+      0.11113
+     ]
+    }
+   },
+   "x": [
+    -0.01491,
+    0.04931,
+    0.054,
+    0.75886,
+    -0.26837,
+    0.56679,
+    0.21986,
+    0.06203,
+    0.07598,
+    0.29604,
+    0.81012,
+    0.76621,
+    0.4319,
+    0.5365,
+    1.16052,
+    1.23317
+   ],
+   "gap_deg": 121.69,
+   "depth_mm": 71.71,
+   "ang_index_deg": 12.69,
+   "protrude_mm": 26.87,
+   "min_dist_mm": 0.77,
+   "valley_thumb_mm": 14.62,
+   "valley_index_mm": 6.02,
+   "rear_out_mm": 30.56,
+   "thumb_index_mm": 20.07,
+   "opposition_deg": 120.59,
+   "arm_gap_at_thumb_mm": 10.08,
+   "half_open_rad": 0.07,
+   "tip_gap_open_mm": 16.8
+  },
+  {
+   "tool": "tw",
+   "variant": 3,
+   "target": {
+    "depth": 80,
+    "ang": 20
+   },
+   "cost": 2.484,
+   "passed": true,
+   "checks": {
+    "a_contacts": true,
+    "a_pad_side": true,
+    "b_direction": true,
+    "c_no_penetration": true,
+    "d_valley": true,
+    "d_enclosed": true
+   },
+   "hand_pose": {
+    "right_thumb_metacarpal_joint": 1.2052,
+    "right_thumb_proximal_joint": 0.6974,
+    "right_index_proximal_joint": 0.4575,
+    "right_middle_proximal_joint": 0.5065,
+    "right_ring_proximal_joint": 1.2,
+    "right_pinky_proximal_joint": 0.9729
+   },
+   "frame": "right_base_link（+x 手のひら側・+y 親指側・+z 指の向き）, m",
+   "lines": {
+    "A": {
+     "rear": [
+      -0.01516,
+      0.05251,
+      0.05575
+     ],
+     "tip": [
+      0.08123,
+      0.00316,
+      0.10745
+     ]
+    },
+    "B": {
+     "rear": [
+      -0.01516,
+      0.05251,
+      0.05575
+     ],
+     "tip": [
+      0.07393,
+      0.00705,
+      0.12205
+     ]
+    }
+   },
+   "axis_palm": [
+    0.77474,
+    -0.39605,
+    0.49288
+   ],
+   "axis_world_at_ARM_HOLD": [
+    0.92523,
+    0.12653,
+    -0.35768
+   ],
+   "contacts": {
+    "thumb_pad→A": {
+     "dist_mm": 0.44,
+     "cos": 0.71,
+     "kind": "腹",
+     "finger_pt": [
+      0.05335,
+      0.01916,
+      0.08974
+     ],
+     "tool_pt": [
+      0.0531,
+      0.019,
+      0.09007
+     ],
+     "n": [
+      -0.57702,
+      -0.358,
+      0.73409
+     ]
+    },
+    "index_pad→B": {
+     "dist_mm": 0.96,
+     "cos": 0.86,
+     "kind": "腹",
+     "finger_pt": [
+      0.04741,
+      0.02201,
+      0.10537
+     ],
+     "tool_pt": [
+      0.04767,
+      0.02144,
+      0.10463
+     ],
+     "n": [
+      0.2681,
+      -0.5878,
+      -0.76329
+     ]
+    },
+    "middle_side→B": {
+     "dist_mm": 0.95,
+     "cos": 0.74,
+     "kind": "側面",
+     "finger_pt": [
+      0.05794,
+      0.01202,
+      0.11275
+     ],
+     "tool_pt": [
+      0.05854,
+      0.01268,
+      0.11241
+     ],
+     "n": [
+      0.62256,
+      0.69481,
+      -0.36009
+     ]
+    }
+   },
+   "x": [
+    -0.01516,
+    0.05251,
+    0.05575,
+    0.70954,
+    -0.36272,
+    0.4514,
+    -0.24256,
+    0.12094,
+    -0.52145,
+    0.29164,
+    1.20525,
+    0.69741,
+    0.45745,
+    0.50653,
+    1.20002,
+    0.97288
+   ],
+   "gap_deg": 151.14,
+   "depth_mm": 83.07,
+   "ang_index_deg": 19.03,
+   "protrude_mm": 28.32,
+   "min_dist_mm": 0.44,
+   "valley_thumb_mm": 15.73,
+   "valley_index_mm": 6.53,
+   "rear_out_mm": 30.78,
+   "thumb_index_mm": 16.96,
+   "opposition_deg": 120.3,
+   "arm_gap_at_thumb_mm": 11.67,
+   "half_open_rad": 0.07,
+   "tip_gap_open_mm": 16.8
+  }
+ ],
+ "chop": [
+  {
+   "tool": "chop",
+   "variant": 1,
+   "target": {
+    "depth": 45,
+    "ang": 20
+   },
+   "cost": 8.682,
+   "passed": true,
+   "checks": {
+    "a_contacts": true,
+    "a_pad_side": true,
+    "b_direction": true,
+    "c_no_penetration": true,
+    "d_valley": true,
+    "d_enclosed": true
+   },
+   "hand_pose": {
+    "right_thumb_metacarpal_joint": 0.021,
+    "right_thumb_proximal_joint": 0.711,
+    "right_index_proximal_joint": 0.3398,
+    "right_middle_proximal_joint": 0.5085,
+    "right_ring_proximal_joint": 0.5462,
+    "right_pinky_proximal_joint": 0.5398
+   },
+   "frame": "right_base_link（+x 手のひら側・+y 親指側・+z 指の向き）, m",
+   "lines": {
+    "lower": {
+     "rear": [
+      -0.01571,
+      0.06021,
+      0.04231
+     ],
+     "tip": [
+      0.15244,
+      -0.07235,
+      0.18981
+     ]
+    },
+    "upper": {
+     "rear": [
+      -0.01409,
+      0.08223,
+      0.06285
+     ],
+     "tip": [
+      0.1525,
+      -0.07046,
+      0.19144
+     ]
+    }
+   },
+   "axis_palm": [
+    0.64673,
+    -0.50983,
+    0.56728
+   ],
+   "axis_world_at_ARM_HOLD": [
+    0.93597,
+    0.26452,
+    -0.23233
+   ],
+   "contacts": {
+    "thumb_pad→upper": {
+     "dist_mm": 0.29,
+     "cos": 0.63,
+     "kind": "腹",
+     "finger_pt": [
+      0.01411,
+      0.06194,
+      0.08102
+     ],
+     "tool_pt": [
+      0.0139,
+      0.06176,
+      0.08109
+     ],
+     "n": [
+      -0.75344,
+      -0.60486,
+      0.25783
+     ]
+    },
+    "index_pad→upper": {
+     "dist_mm": 1.04,
+     "cos": 0.98,
+     "kind": "腹",
+     "finger_pt": [
+      0.04458,
+      0.02667,
+      0.11442
+     ],
+     "tool_pt": [
+      0.04513,
+      0.02653,
+      0.11355
+     ],
+     "n": [
+      0.52888,
+      -0.12941,
+      -0.83877
+     ]
+    },
+    "middle_side→upper": {
+     "dist_mm": 0.21,
+     "cos": 0.79,
+     "kind": "側面",
+     "finger_pt": [
+      0.05548,
+      0.01375,
+      0.11562
+     ],
+     "tool_pt": [
+      0.05555,
+      0.01392,
+      0.11573
+     ],
+     "n": [
+      0.35153,
+      0.79707,
+      0.49102
+     ]
+    },
+    "ring_side→lower": {
+     "dist_mm": 1.3,
+     "cos": 0.75,
+     "kind": "側面",
+     "finger_pt": [
+      0.05659,
+      -0.00353,
+      0.10856
+     ],
+     "tool_pt": [
+      0.05739,
+      -0.00251,
+      0.10857
+     ],
+     "n": [
+      0.61624,
+      0.78754,
+      0.00523
+     ]
+    },
+    "thumb_base→lower": {
+     "dist_mm": 1.65,
+     "cos": 0.0,
+     "kind": "付け根",
+     "finger_pt": [
+      0.00455,
+      0.04959,
+      0.05322
+     ],
+     "tool_pt": [
+      0.0033,
+      0.04901,
+      0.05413
+     ],
+     "n": [
+      -0.75821,
+      -0.34896,
+      0.55077
+     ]
+    }
+   },
+   "x": [
+    -0.01571,
+    0.06021,
+    0.04231,
+    0.7122,
+    -0.56144,
+    0.62471,
+    0.00398,
+    0.62089,
+    0.51534,
+    0.03027,
+    0.02099,
+    0.711,
+    0.33984,
+    0.50853,
+    0.54622,
+    0.53981
+   ],
+   "gap_deg": 128.36,
+   "depth_mm": 38.97,
+   "ang_index_deg": 28.16,
+   "protrude_mm": 156.13,
+   "min_dist_mm": 0.21,
+   "valley_thumb_mm": 1.65,
+   "valley_index_mm": 10.72,
+   "rear_out_mm": 24.7,
+   "lower_support_deg": 137.66,
+   "sticks_angle_deg": 6.1,
+   "thick_gap_mm": -2.31,
+   "pivot_to_pinch_mm": 206.49,
+   "pivot_from_mcp_mm": 31.37,
+   "index_pad_to_pinch_mm": 158.32,
+   "rear_sep_mm": 30.15
+  },
+  {
+   "tool": "chop",
+   "variant": 2,
+   "target": {
+    "depth": 60,
+    "ang": 27
+   },
+   "cost": 7.595,
+   "passed": true,
+   "checks": {
+    "a_contacts": true,
+    "a_pad_side": true,
+    "b_direction": true,
+    "c_no_penetration": true,
+    "d_valley": true,
+    "d_enclosed": true
+   },
+   "hand_pose": {
+    "right_thumb_metacarpal_joint": 0.1689,
+    "right_thumb_proximal_joint": 0.7361,
+    "right_index_proximal_joint": 0.2458,
+    "right_middle_proximal_joint": 0.3789,
+    "right_ring_proximal_joint": 0.4077,
+    "right_pinky_proximal_joint": 1.1913
+   },
+   "frame": "right_base_link（+x 手のひら側・+y 親指側・+z 指の向き）, m",
+   "lines": {
+    "lower": {
+     "rear": [
+      -0.01676,
+      0.06094,
+      0.0267
+     ],
+     "tip": [
+      0.12111,
+      -0.05683,
+      0.21303
+     ]
+    },
+    "upper": {
+     "rear": [
+      -0.01465,
+      0.08973,
+      0.04613
+     ],
+     "tip": [
+      0.12119,
+      -0.0547,
+      0.21433
+     ]
+    }
+   },
+   "axis_palm": [
+    0.53029,
+    -0.45296,
+    0.71667
+   ],
+   "axis_world_at_ARM_HOLD": [
+    0.85653,
+    0.44255,
+    -0.26554
+   ],
+   "contacts": {
+    "thumb_pad→upper": {
+     "dist_mm": 0.78,
+     "cos": 0.61,
+     "kind": "腹",
+     "finger_pt": [
+      0.02057,
+      0.05877,
+      0.08343
+     ],
+     "tool_pt": [
+      0.01992,
+      0.05841,
+      0.08365
+     ],
+     "n": [
+      -0.84023,
+      -0.46455,
+      0.27967
+     ]
+    },
+    "index_pad→upper": {
+     "dist_mm": 0.93,
+     "cos": 0.97,
+     "kind": "腹",
+     "finger_pt": [
+      0.04028,
+      0.02823,
+      0.1219
+     ],
+     "tool_pt": [
+      0.04095,
+      0.02811,
+      0.12126
+     ],
+     "n": [
+      0.71329,
+      -0.13096,
+      -0.68852
+     ]
+    },
+    "middle_side→upper": {
+     "dist_mm": 0.38,
+     "cos": 0.83,
+     "kind": "側面",
+     "finger_pt": [
+      0.05129,
+      0.01401,
+      0.1285
+     ],
+     "tool_pt": [
+      0.05145,
+      0.01432,
+      0.12864
+     ],
+     "n": [
+      0.42767,
+      0.82705,
+      0.36481
+     ]
+    },
+    "ring_side→lower": {
+     "dist_mm": 1.19,
+     "cos": 0.79,
+     "kind": "側面",
+     "finger_pt": [
+      0.05146,
+      -0.00409,
+      0.12231
+     ],
+     "tool_pt": [
+      0.05213,
+      -0.00311,
+      0.12243
+     ],
+     "n": [
+      0.56193,
+      0.82075,
+      0.10296
+     ]
+    },
+    "thumb_base→lower": {
+     "dist_mm": 1.74,
+     "cos": 0.0,
+     "kind": "付け根",
+     "finger_pt": [
+      0.00706,
+      0.04573,
+      0.04944
+     ],
+     "tool_pt": [
+      0.0056,
+      0.04542,
+      0.05033
+     ],
+     "n": [
+      -0.84144,
+      -0.17775,
+      0.51027
+     ]
+    }
+   },
+   "x": [
+    -0.01676,
+    0.06094,
+    0.0267,
+    0.55966,
+    -0.47805,
+    0.75636,
+    0.06192,
+    0.11455,
+    0.17437,
+    0.06282,
+    0.16893,
+    0.73613,
+    0.24578,
+    0.3789,
+    0.40774,
+    1.19131
+   ],
+   "gap_deg": 137.27,
+   "depth_mm": 59.73,
+   "ang_index_deg": 26.48,
+   "protrude_mm": 139.68,
+   "min_dist_mm": 0.22,
+   "valley_thumb_mm": 1.74,
+   "valley_index_mm": 10.95,
+   "rear_out_mm": 35.82,
+   "lower_support_deg": 124.48,
+   "sticks_angle_deg": 7.13,
+   "thick_gap_mm": -1.77,
+   "pivot_to_pinch_mm": 191.56,
+   "pivot_from_mcp_mm": 32.94,
+   "index_pad_to_pinch_mm": 142.18,
+   "rear_sep_mm": 34.81
+  },
+  {
+   "tool": "chop",
+   "variant": 3,
+   "target": {
+    "depth": 75,
+    "ang": 33
+   },
+   "cost": 29.611,
+   "passed": true,
+   "checks": {
+    "a_contacts": true,
+    "a_pad_side": true,
+    "b_direction": true,
+    "c_no_penetration": true,
+    "d_valley": true,
+    "d_enclosed": true
+   },
+   "hand_pose": {
+    "right_thumb_metacarpal_joint": 0.0933,
+    "right_thumb_proximal_joint": 0.8267,
+    "right_index_proximal_joint": 0.2631,
+    "right_middle_proximal_joint": 0.4563,
+    "right_ring_proximal_joint": 0.5124,
+    "right_pinky_proximal_joint": 1.1118
+   },
+   "frame": "right_base_link（+x 手のひら側・+y 親指側・+z 指の向き）, m",
+   "lines": {
+    "lower": {
+     "rear": [
+      -0.01528,
+      0.05524,
+      0.03815
+     ],
+     "tip": [
+      0.14697,
+      -0.06402,
+      0.20262
+     ]
+    },
+    "upper": {
+     "rear": [
+      -0.01874,
+      0.07981,
+      0.06255
+     ],
+     "tip": [
+      0.14663,
+      -0.06219,
+      0.20428
+     ]
+    }
+   },
+   "axis_palm": [
+    0.62403,
+    -0.4587,
+    0.6326
+   ],
+   "axis_world_at_ARM_HOLD": [
+    0.90229,
+    0.32624,
+    -0.28185
+   ],
+   "contacts": {
+    "thumb_pad→upper": {
+     "dist_mm": 1.2,
+     "cos": 0.54,
+     "kind": "腹",
+     "finger_pt": [
+      0.0192,
+      0.05333,
+      0.08967
+     ],
+     "tool_pt": [
+      0.01828,
+      0.05271,
+      0.09013
+     ],
+     "n": [
+      -0.76823,
+      -0.51462,
+      0.38077
+     ]
+    },
+    "index_pad→upper": {
+     "dist_mm": 1.21,
+     "cos": 1.0,
+     "kind": "腹",
+     "finger_pt": [
+      0.0398,
+      0.02793,
+      0.11946
+     ],
+     "tool_pt": [
+      0.04047,
+      0.02773,
+      0.11847
+     ],
+     "n": [
+      0.55482,
+      -0.16731,
+      -0.81498
+     ]
+    },
+    "middle_side→upper": {
+     "dist_mm": 0.9,
+     "cos": 0.79,
+     "kind": "側面",
+     "finger_pt": [
+      0.05201,
+      0.01424,
+      0.12132
+     ],
+     "tool_pt": [
+      0.0522,
+      0.01497,
+      0.12183
+     ],
+     "n": [
+      0.20863,
+      0.80184,
+      0.55993
+     ]
+    },
+    "ring_side→lower": {
+     "dist_mm": 1.5,
+     "cos": 0.81,
+     "kind": "側面",
+     "finger_pt": [
+      0.05551,
+      -0.00359,
+      0.11246
+     ],
+     "tool_pt": [
+      0.05632,
+      -0.00233,
+      0.11258
+     ],
+     "n": [
+      0.53633,
+      0.84019,
+      0.08016
+     ]
+    },
+    "thumb_base→lower": {
+     "dist_mm": 1.66,
+     "cos": 0.0,
+     "kind": "付け根",
+     "finger_pt": [
+      0.00596,
+      0.04487,
+      0.05228
+     ],
+     "tool_pt": [
+      0.00467,
+      0.04429,
+      0.05314
+     ],
+     "n": [
+      -0.78129,
+      -0.35295,
+      0.51479
+     ]
+    }
+   },
+   "x": [
+    -0.01528,
+    0.05524,
+    0.03815,
+    0.59546,
+    -0.4377,
+    0.60364,
+    0.09404,
+    0.12661,
+    0.34341,
+    0.04214,
+    0.09329,
+    0.82672,
+    0.26309,
+    0.45625,
+    0.51244,
+    1.11179
+   ],
+   "gap_deg": 130.8,
+   "depth_mm": 53.38,
+   "ang_index_deg": 26.23,
+   "protrude_mm": 153.51,
+   "min_dist_mm": 0.21,
+   "valley_thumb_mm": 1.66,
+   "valley_index_mm": 11.13,
+   "rear_out_mm": 26.95,
+   "lower_support_deg": 132.4,
+   "sticks_angle_deg": 7.13,
+   "thick_gap_mm": -1.77,
+   "pivot_to_pinch_mm": 206.0,
+   "pivot_from_mcp_mm": 28.85,
+   "index_pad_to_pinch_mm": 157.46,
+   "rear_sep_mm": 34.81
+  }
+ ]
+}

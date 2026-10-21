@@ -23,7 +23,7 @@ W, H = 960, 720
 FONT = ImageFont.truetype("/System/Library/Fonts/ヒラギノ角ゴシック W6.ttc", 32)
 
 TABLE_TOP = 0.72
-PLATES = [(0.45, -0.20), (0.45, 0.0)]   # 右手の前に豆の皿、その左に移す先の皿
+PLATES = [(0.35, -0.10), (0.45, 0.10)]   # 豆の皿・移す先の皿。10/14 にピンセットの手が届く位置へ寄せた（元は (0.45,-0.20)）
 
 # 右手の6つの指令（URDF で mimic されていない関節）と字幕
 STEPS = [
@@ -48,7 +48,10 @@ ARM_POSE = {  # 両腕を机の上へ出す
 }
 
 
-def build():
+def build_spec(props=True, plates=None):
+    """組み立てる前の場面（ほかのスクリプトが物を足してから compile できる）。
+    props=False で飾りの豆とピンセットを置かない（皿は置く）。plates で皿の位置を変えられる。"""
+    plates = plates or PLATES
     text = URDF.read_text().replace('meshdir="meshes"', f'meshdir="{G1.resolve()}"')
     robot = mujoco.MjSpec.from_string(text)
 
@@ -63,23 +66,28 @@ def build():
     w.add_geom(type=mujoco.mjtGeom.mjGEOM_BOX, size=[0.3, 0.4, 0.02],
                pos=[0.55, 0, TABLE_TOP - 0.02], rgba=[0.6, 0.5, 0.4, 1])
     rng = np.random.default_rng(0)
-    for k, (x, y) in enumerate(PLATES):
+    for k, (x, y) in enumerate(plates):
         w.add_geom(type=mujoco.mjtGeom.mjGEOM_CYLINDER, size=[0.07, 0.004, 0],
                    pos=[x, y, TABLE_TOP + 0.004], rgba=[0.97, 0.97, 0.97, 1])
-        if k == 0:   # 豆（直径 約8mm の仮の大きさ）
+        if k == 0 and props:   # 豆（直径 約8mm の仮の大きさ）
             for _ in range(15):
                 r, a = 0.05 * math.sqrt(rng.random()), 2 * math.pi * rng.random()
                 w.add_geom(type=mujoco.mjtGeom.mjGEOM_SPHERE, size=[0.004, 0, 0],
                            pos=[x + r * math.cos(a), y + r * math.sin(a), TABLE_TOP + 0.012],
                            rgba=[0.75, 0.55, 0.3, 1])
     # ピンセット（形だけ）
-    w.add_geom(type=mujoco.mjtGeom.mjGEOM_BOX, size=[0.06, 0.004, 0.002],
-               pos=[0.35, -0.33, TABLE_TOP + 0.002], rgba=[0.7, 0.7, 0.75, 1])
+    if props:
+        w.add_geom(type=mujoco.mjtGeom.mjGEOM_BOX, size=[0.06, 0.004, 0.002],
+                   pos=[0.35, -0.33, TABLE_TOP + 0.002], rgba=[0.7, 0.7, 0.75, 1])
 
     spec.attach(robot, frame=w.add_frame(pos=[0, 0, 0.80]), prefix="")
     spec.visual.global_.offwidth = W
     spec.visual.global_.offheight = H
-    model = spec.compile()
+    return spec
+
+
+def build():
+    model = build_spec().compile()
     return model, mujoco.MjData(model)
 
 
