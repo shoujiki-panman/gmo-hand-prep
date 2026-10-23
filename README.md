@@ -273,3 +273,8 @@ G1 の動画は、Unitree の [unitree_ros](https://github.com/unitreerobotics/u
 - [MuJoCo](https://github.com/google-deepmind/mujoco)
 
 このリポジトリのコードは MIT ライセンスです。
+
+## 参考資料（reports/）
+
+- [録る → 学習 → 測る 手順書（シミュ版）](reports/act-sim-procedure-2026-10-16.md)：見本集め・学習・評価のコマンドとかかった時間。12月に実機で同じ流れを回すときの下敷き
+- [5本指ハンドで道具を握らせる先行例の調べ](reports/how-world-grasps-tools-2026-10-21.md)：箸・ピンセットを指で保持した研究の作り方・学習時間・成功率（出典つき）
